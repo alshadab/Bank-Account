@@ -8,11 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body >
+<body class="deposit p-3 mb-2 bg-secondary bg-gradient;" >
     <div id="clearDisplay"  class="body position-relative ">
         
-        <h1>Welcome To the Bank Facility</h1>
-        <img src="images/Background user.png" alt="">
+        <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif; color:white;">Welcome To the Bank Facility</h1>
+        <img src="images/367-3670105_admin-login-logo-png.png" alt="">
         <div class="input position-absolute top-50 start-50 translate-middle">
             <input type="email" class="form-control" placeholder="Email">
             <br>
@@ -29,7 +29,7 @@
 
             <div class="deposit p-3 mb-2 bg-primary bg-gradient text-white">
                 <h4>Deposit</h4>
-            <h1>$00</h1>
+            <h1>$<span id="depositevalue">00</span></h1>
             </div>
 
         </div>
@@ -55,7 +55,7 @@
             <div class="col-md-6">
                <div class="payment-style p-3 mb-2 bg-light bg-gradient text-dark">
                 <h2>Deposit</h2>
-                <input type="text"class="form-control"placeholder="$ amount you want to deposit">
+                <input id="amount" type="text"class="form-control"placeholder="$ amount you want to deposit">
                 <br>
                 <button id="deposit" type="button" class="btn btn-success">Deposit</button>
                </div>
@@ -86,6 +86,19 @@
 })
 //handler
 const deposit=document.getElementById("deposit");
+deposit.addEventListener("click",function(){
+    const Amount=document.getElementById("amount").value;
+    const DepositValue=parseFloat(Amount);
+    const depositFinalValue=document.getElementById("depositevalue").innerText;
+    const parseamount=parseFloat(depositFinalValue);
+    const FinalAmount=DepositValue+parseamount;
+    document.getElementById("depositevalue").innerText=FinalAmount;
+    document.getElementById("amount").value="";
+
+    
+
+
+})
 </script>
 </body>
 </html>
