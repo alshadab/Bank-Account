@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    background-color: rgb(67, 156, 216);
+    
+  
+   
+}
+.body{
+   
+    text-align: center;
+    padding: 100px;
+    text-align: center;
+    margin-top: 0px;
+    
+    
+    
+}
+.input{
+    background-image: url("images/blue-1273089_1280.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    margin-top: 50px;
+    width: 50%;
+    margin-top: 350px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px;
+    padding: 80px;
+    
+
+}
+.input .btn{
+    margin-top: 20px;
+    align-items: center;
+}
+
+.body img{
+   margin-top: 50px;
+}
+/* .form-control{
+    background-color: transparent;
+    border-color: black;
+} */
+#display{
+    display: none;
+    padding: 100px 100px;
+}
+
+.deposit{
+    border-radius: 15px;
+    
+
+}
+
+.withdraw{
+    border-radius: 15px;
+    
+}
+
+.balance{
+    border-radius: 15px;
+   
+}
+.payment-style{
+
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px;
+    margin-top: 50px;
+}
+
+.payment-style .form-control{
+    margin-top: 20px;
+}
