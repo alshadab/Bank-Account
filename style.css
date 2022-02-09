@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: rgb(67, 156, 216);
+    background-image:url("images/bg.jpg");
     
   
    
@@ -16,14 +16,14 @@ body{
     
 }
 .input{
-    background-image: url("images/blue-1273089_1280.jpg");
-    background-repeat: no-repeat;
-    background-size:100% 100%;
+    /* background-image: url("images/blue-1273089_1280.jpg"); */
+    /* background-repeat: no-repeat;
+    background-size:100% 100%; */
     margin-top: 50px;
     width: 50%;
     margin-top: 350px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px;
+    /* border-radius: 20px;
+    box-shadow: 5px 5px 10px; */
     padding: 80px;
     
 
@@ -35,6 +35,7 @@ body{
 
 .body img{
    margin-top: 50px;
+   filter: drop-shadow(5px 5px 10px);
 }
 /* .form-control{
     background-color: transparent;
