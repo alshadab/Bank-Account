@@ -1,6 +1,8 @@
 body{
     margin: 0px;
     background-image:url("images/bg.jpg");
+    /* background-repeat: no-repeat;
+    background-size: cover; */
     
   
    
@@ -35,7 +37,8 @@ body{
 
 .body img{
    margin-top: 50px;
-   filter: drop-shadow(5px 5px 10px);
+   width: 200px;
+  
 }
 /* .form-control{
     background-color: transparent;
